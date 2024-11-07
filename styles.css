@@ -1,13 +1,16 @@
-h1{
-    font-family: fantasy;
-    color: forestgreen;
-    font-size: 36px;
-    word-spacing: 3px;
+h1 {
+  font-family: fantasy;
+  color: forestgreen;
+  font-size: 36px;
+  word-spacing: 3px;
 }
-.tabs{
-    list-style-type: non;
+.tabs {
+  list-style-type: non;
 }
-nav{
-    background: #222;
-    padding: 0 15px;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background: #982222;
+  padding: 0 15px;
 }
