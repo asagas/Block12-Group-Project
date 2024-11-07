@@ -4,3 +4,6 @@ h1{
     font-size: 36px;
     word-spacing: 3px;
 }
+.tabs{
+    list-style-type: non;
+}
