@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel= "stylesheet" href="style.css">
+</head>
+<!--Replace "/submit_form" with the URL or backend endpoint where you want to process the form data-->
+<body id="body">
+    <section>
+    <h2 id="contact">Contact Us</h2>
+    <section id="form">
+    <form action="/submit_form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+    
+    <section id="label">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+    </section>
+
+    <section id="textarea">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <br><br>
+
+    
+    <section id="button">
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        document.querySelector("form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const message = document.getElementById("message").value.trim();
+    
+        
+            console.log('Name input: ', name);
+            console.log('Email input: ', email);
+            console.log('The message: ', message);
+
+        });
+    </script>
+</body>
+</html>
