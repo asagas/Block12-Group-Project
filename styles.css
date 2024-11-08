@@ -3,27 +3,51 @@ h1 {
   color: forestgreen;
   font-size: 36px;
   word-spacing: 3px;
-  align-items: center;
+  text-align: center; /* Changed from align-items, which is for flex containers */
 }
+
 .tabs {
-  list-style-type: non;
+  list-style-type: none; /* Corrected "non" to "none" */
 }
+
 nav {
+  position: fixed;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
   background: #982222;
   padding: 0 15px;
+  color: aliceblue;
+  width: 100%;
+  top: 0;
+  height: 60px; /* Adjust height as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for shadow */
 }
-#body {
+
+body {
   font-family: fantasy;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-
+  padding-top: 30px; /* Offset the height of the fixed nav bar */
+  padding-left: 10px;
 }
+
+section img {
+  max-width: 10em;
+  height: auto;
+  display: block; /* Changed from flex as it’s for flex containers */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+#p {
+  border:10px, #45a049;
+}
+
 #form {
   max-width: 400px;
   padding: 75px;
@@ -31,32 +55,32 @@ nav {
   border-radius: 50px;
   background-color: aliceblue;
 }
+
 #btn {
   background-color: #4CAF50;
   color: white;
   border: none;
   cursor: pointer;
+  padding: 10px 20px; /* Optional: Added padding for better button appearance */
 }
+
 #btn:hover {
   background-color: #45a049;
 }
+
 #contact {
   text-align: center;
 }
+
 #label {
   font-weight: bold;
   font-size: 1rem;
-  display: block;
+  display: flex;
   margin-top: 10px;
-
- 
 }
 
-
-@media (max-width:500px) {
-
-
+@media (max-width: 500px) {
   #contact {
-      background-color: red;
+    background-color: red;
   }
 }
